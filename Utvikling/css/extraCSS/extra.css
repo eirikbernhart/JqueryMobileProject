@@ -1,0 +1,53 @@
+
+
+
+.loggInnBtn {
+	
+	width: 40%;
+	position: absolute;
+	left: 50%;
+	/**right: 50;**/
+	margin-left: -20%;
+	
+	top: 80%;
+	
+	
+	
+
+}
+
+.inpLgn1 {
+	width: 60%;
+	left: 50%;
+		position: absolute;
+
+	/**right: 50;**/
+	margin-left: -30%;
+	
+}
+
+.inpLgn2 {
+	width: 60%;
+	left: 50%;
+	position: absolute;
+
+	/**right: 50;**/
+	margin-left: -30%;
+	top: 35%;
+	
+}
+
+.extraCaruItemWrapper {
+	
+	
+}
+
+.extraCaruItem {
+	width: 50%;
+	left: 50%;
+	position: relative;
+	margin-left: -25%;
+	
+	
+	
+}

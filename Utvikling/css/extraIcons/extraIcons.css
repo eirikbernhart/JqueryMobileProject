@@ -1,0 +1,97 @@
+/*<a href="page.html" data-role="button" data-theme="b" data-iconpos="left" data-icon="myapp-settings">Custom Icon </a>*/
+
+.ui-icon-customOversikt {
+    
+    background: url(../../images/extraIconsPng/pie-chart-medium.png) no-repeat rgba(0, 0, 0, 0) !important; 
+    background-color: transparent;
+    box-shadow: none;
+    border: none !important;
+    width: 64px;
+    height: 64px;
+	text-align: center;
+}
+
+.ui-icon-customSparing {
+    
+    background: url(../../images/extraIconsPng/money-medium.png) no-repeat rgba(0, 0, 0, 0) !important; 
+    background-color: transparent;
+    box-shadow: none;
+    border: none !important;
+    width: 64px;
+    height: 64px;
+	
+}
+
+.ui-icon-nyFoering {
+    
+    background: url(../../images/extraIconsPng/add-medium.png) no-repeat rgba(0, 0, 0, 0) !important; 
+    background-color: transparent;
+    box-shadow: none;
+    border: none !important;
+    width: 64px;
+    height: 64px;
+}
+
+.ui-icon-hisoryList {
+    
+    background: url(../../images/extraIconsPng/menu-lines.png) no-repeat rgba(0, 0, 0, 0) !important; 
+    background-color: transparent;
+    box-shadow: none;
+    border: none !important;
+    width: 64px;
+    height: 64px;
+}
+
+.center-align-col-container{
+		text-align: center;
+		flex: 1;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+/*Expand Icons*/
+.hvr-shrink {
+   
+    display: inline-block;
+    vertical-align: middle;
+    
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    transition-duration: 0.2s;
+    transition-property: transform;
+    
+}
+
+.hvr-shrink:hover, .hvr-shrink:focus, .hvr-shrink:active {
+    transform: scale(1.05);
+}
+
+/*Aligns chart responsively in the x-axis-middle*/
+#myDChart {
+	margin: 0 auto !Important;
+	width: 30%;
+}
+
+#myChart {
+	margin: 0 auto !Important;
+	left: 20px;
+}
+
+.center-wrapper{
+  text-align: center;
+}
+.center-wrapper * {
+  margin: 0 auto;
+}
+
+#totalField {
+	margin: 0 auto !Important;
+    width : 200px;
+}
+
+
+
+
+   
