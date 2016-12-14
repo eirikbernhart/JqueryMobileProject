@@ -6,37 +6,45 @@ ctx.canvas.width = 350;
 ctx.canvas.height = 350;
 
 
+ 
+  
+
+var label1 = "Leie";
+//var pic = "images/extraIconsPng/santa-claus.png";
+//var img = new Image();
+//img.src=pic;
+//var label1Img = document.getElementById('lol');
+//var label1Img = "lol";
+
+ 
 var data = {
     labels: [
-       "1",
-		"2",
-		"3",
-		"4",
-		"5",
-		"6",
-		"7"
+       label1,
+		"Sosialt",
+		"Transport",
+		"Mat&drikke",
+		"Annet"
+		
 		
     ],
     datasets: [
         {
-            data: [300, 50, 100, 30, 80, 45, 120],
+            data: [300, 50, 100, 30, 80],
             backgroundColor: [
                 "#704c93",
                 "#8466a3",
                 "#997fb2",
 				"#AD99C1",
-				"#C1B2D1",
-				"#D6CCE0",
-				"#EAE5EF"
+				"#C1B2D1"
+				
             ],
             hoverBackgroundColor: [
                 "#704c93",
                 "#8466a3",
                 "#997fb2",
 				"#AD99C1",
-				"#C1B2D1",
-				"#D6CCE0",
-				"#EAE5EF"
+				"#C1B2D1"
+				
             ]
         }]
 };
@@ -90,15 +98,46 @@ Chart.pluginService.register({
 
 
 var chartInstance = new Chart(ctx, {
+	 
 			type: 'doughnut',
 			data: data,
 			options: {
 				showAllTooltips: true,
+			legend: {
+    display: false,
+},
         responsive: false,	
 		cutoutPercentage: 70
 	    
 				
 		}
 });
+
+function month() {
+	chartInstance.data.datasets[0].data[0] = 600;//= [600, 25, 30, 5, 40]; 
+	chartInstance.data.datasets[0].data[1] = 100;
+	chartInstance.data.datasets[0].data[2] = 120;
+	chartInstance.data.datasets[0].data[3] = 50;
+	chartInstance.data.datasets[0].data[4] = 40;
+	chartInstance.update();
+}
+
+function today() {
+	chartInstance.data.datasets[0].data[0] = 300;//= [600, 25, 30, 5, 40]; 
+	chartInstance.data.datasets[0].data[1] = 50;
+	chartInstance.data.datasets[0].data[2] = 100;
+	chartInstance.data.datasets[0].data[3] = 30;
+	chartInstance.data.datasets[0].data[4] = 80;
+	chartInstance.update();
+}
+
+function week() {
+	chartInstance.data.datasets[0].data[0] = 450;//= [600, 25, 30, 5, 40]; 
+	chartInstance.data.datasets[0].data[1] = 75;
+	chartInstance.data.datasets[0].data[2] = 125;
+	chartInstance.data.datasets[0].data[3] = 180;
+	chartInstance.data.datasets[0].data[4] = 120;
+	chartInstance.update();
+}
 
 
