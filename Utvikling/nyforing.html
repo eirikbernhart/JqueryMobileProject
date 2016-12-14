@@ -53,35 +53,67 @@
 <body>
 	
 	
-<!--################################# PAGE START: "HISTORY" #################################-->
-	<div data-role="page" id="pageHistory">
+	<!--################################# Page Start NY-FØRING #################################-->
+	<div data-role="page" id="pageNewData">
 		
-		<!-- HEADER -->
+		<!-- header -->
 		<div data-role="header" data-position="fixed">
-			<h1>History</h1>
+			<h1>Ny Føring</h1>
 		</div>
 		
-		<!--CONTENT-->  
+		
+
+		
+
+		
+		<form>
+		<fieldset data-role="collapsible">
+			<legend>Ny Inntekt</legend>
+				<input type="text" name="textinput-f" id="textinput-f" placeholder="Eks: Narvesen 40,-" value="">
+				<div data-role="controlgroup">
+						<label class="checkbox-inline" for="radio-1-a">Lønn
+							<input type="radio" name="checkbox-1-a" id="radio-1-a">
+						</label>
+						
+						<label class="checkbox-inline" for="radio-1-b">Vips
+							<input type="radio" name="checkbox-1-a" id="radio-1-b">	
+						</label>
+						
+				</div>
+		</fieldset>
+		</form>
+		
+		<form>
+		<fieldset data-role="collapsible">
+			<legend>Ny Utgift</legend>
+				<input type="text" name="textinput-f2" id="textinput-f" placeholder="Eks: Narvesen 40,-" value="">
+				<div data-role="controlgroup">
+						<label class="checkbox-inline" for="radio-2-a">Leie
+							<input type="radio" name="checkbox-1-a" id="radio-2-a">
+						</label>
+						
+						<label class="checkbox-inline" for="radio-2-b">Mat & drikke
+							<input type="radio" name="checkbox-1-a" id="radio-2-b">	
+						</label>
+					
+						<label class="checkbox-inline" for="radio-2-c">Sosialt
+							<input type="radio" name="checkbox-1-a" id="radio-2-c">	
+						</label>
+			</div>
+		</fieldset>
+		</form>
 		
 		
-			<!--Firebase-->
-			<pre id="object">
-		
-			</pre>
-		
-			<ul id="history-list">
-		
-			</ul>
-			<!--Firebase-End-->
 		
 		
-		<!--CONTETNT-END-->
 		
 		
-		 
+		
+		
+		  
 		  
 		
-		<!-- FOOTER -->
+		<!-- footer -->
 		<div data-role="footer" data-position="fixed">	
 			<div data-role="navbar">
 				<ul>
@@ -97,7 +129,10 @@
 	
 	
 	
-	
+		
+		
+		
+		
 	<!--Firebase-Local-->
 	<script src="js/firebase.js"></script>
 	<!--Custom js-->
