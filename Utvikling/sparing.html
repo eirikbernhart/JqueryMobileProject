@@ -53,67 +53,78 @@
 <body>
 	
 	
-	<!--################################# Page Start NY-FØRING #################################-->
-	<div data-role="page" id="pageNewData">
+
+	<!--################################# PAGE START: "SPARING" #################################-->
+	<div data-role="page" id="pageSparing">
 		
-		<!-- header -->
+		<!-- HEADER -->
 		<div data-role="header" data-position="fixed">
-			<h1>Ny Føring</h1>
+			<h1>Sparing</h1>
 		</div>
 		
+		<!--CONTENT-->  
 		
-
-		
-
-		
+		<!--ny sparing-->
 		<form>
-		<fieldset data-role="collapsible">
-			<legend>Ny Inntekt</legend>
-				<input type="text" name="textinput-f" id="textinput-f" placeholder="Eks: Narvesen 40,-" value="">
+		<fieldset margin-top: 2cm>
+			<legend>Ny Sparing</legend>
+				<input type="text" name="textinput-f" id="textinput-f" placeholder="Eks: Sydentur" value="">
+				<input type="text" name="textinput-f" id="textinput-f" placeholder="22.07.17" value="">
+				<input type="text" name="textinput-f" id="textinput-f" placeholder="8000,-" value="">
+				<button>Ok</button>
+			
 				<div data-role="controlgroup">
-						<label class="checkbox-inline" for="radio-1-a">Lønn
-							<input type="radio" name="checkbox-1-a" id="radio-1-a">
-						</label>
-						
-						<label class="checkbox-inline" for="radio-1-b">Vips
-							<input type="radio" name="checkbox-1-a" id="radio-1-b">	
-						</label>
 						
 				</div>
 		</fieldset>
 		</form>
 		
+		<!--Aktive sparinger-->
 		<form>
 		<fieldset data-role="collapsible">
-			<legend>Ny Utgift</legend>
-				<input type="text" name="textinput-f2" id="textinput-f" placeholder="Eks: Narvesen 40,-" value="">
+			<legend>Aktive Sparinger</legend>
+				<p>Her kommer data fra firebase</p>
+			
 				<div data-role="controlgroup">
-						<label class="checkbox-inline" for="radio-2-a">Leie
-							<input type="radio" name="checkbox-1-a" id="radio-2-a">
-						</label>
 						
-						<label class="checkbox-inline" for="radio-2-b">Mat & drikke
-							<input type="radio" name="checkbox-1-a" id="radio-2-b">	
-						</label>
-					
-						<label class="checkbox-inline" for="radio-2-c">Sosialt
-							<input type="radio" name="checkbox-1-a" id="radio-2-c">	
-						</label>
-			</div>
+				</div>
+		</fieldset>
+		</form>
+		
+		<!--Fullførte sparinger-->
+		<form>
+		<fieldset data-role="collapsible">
+			<legend>Fullførte Sparinger</legend>
+				<p>Her kommer data fra firebase</p>
+			
+				<div data-role="controlgroup">
+						
+				</div>
+		</fieldset>
+		</form>
+		
+		<!--Kansellerte sparinger-->
+		<form>
+		<fieldset data-role="collapsible">
+			<legend>Kansellerte Sparinger</legend>
+				<p>Her kommer data fra firebase</p>
+			
+				<div data-role="controlgroup">
+						
+				</div>
 		</fieldset>
 		</form>
 		
 		
 		
 		
+		<!--CONTETNT-END-->
 		
 		
-		
-		
+		 
 		  
-		  
 		
-		<!-- footer -->
+		<!-- FOOTER -->
 		<div data-role="footer" data-position="fixed">	
 			<div data-role="navbar">
 				<ul>
@@ -127,12 +138,6 @@
 	
 	
 	
-	
-	
-		
-		
-		
-		
 	<!--Firebase-Local-->
 	<script src="js/firebase.js"></script>
 	<!--Custom js-->
