@@ -52,83 +52,44 @@
 
 <body>
 	
-	<!--################################# Page Start HOME #################################-->
-	<div data-role="page" id="home">
-	
+
+	<!--################################# PAGE START: "OVERSIKT" #################################-->
+	<div data-role="page" id="pageOversikt">
+		
 		<!-- HEADER -->
 		<div data-role="header" data-position="fixed">
-			<h1>Hovedside</h1>
-			<a href="#login">logg ut</a>
+			<h1>Oversikt</h1>
 		</div>
 		
+		<!--CONTENT-->  
 		
 		
 		
-		
-		<!--CONTENT-START-->
-		
-		
-		
-		<h1>
-			<center>
-			 Velg kort
-			</center>
-		</h1>
-		
-		<!--Carousel for selecting cards-->
-		
-		<section class="regular slider">
-			<div class="extraCaruItemWrapper">
-			  <img src="images/extraIconsPng/credit-card128.png" class="extraCaruItem">
-			</div>
-			<div class="extraCaruItemWrapper">
-			  <img src="images/extraIconsPng/credit-card128v2.png" class="extraCaruItem">
-			</div >
-			<div class="extraCaruItemWrapper">
-			  <img src="images/extraIconsPng/credit-card128v3.png" class="extraCaruItem">
-			</div>
-	    </section>
-		
-		
-		
-		
-		
+		<!--Doughnut chart-->
+        <canvas id="myDChart" width="256" height="256"></canvas>
+		<script src="js/scriptDoughnut.js"></script>
 
-		<!--ICON-BUTTONS-START-->
-		<div class="ui-grid-a">
-			<div class="ui-block-a center-align-col-container"><a href="oversikt.html" class="ui-btn ui-icon-customOversikt hvr-shrink ui-corner-all ui-shadow ui-btn-icon-notext ui-nodisc-icon"></a></div>
-			<div class="ui-block-b center-align-col-container"><a href="nyforing.html" class="ui-btn ui-icon-nyFoering hvr-shrink ui-corner-all ui-shadow ui-btn-icon-notext ui-nodisc-icon"></a></div>
-			
-		</div>
-		
-		<div class="ui-grid-a">
-			<div class="ui-block-a center-align-col-container"><a href="sparing.html" class="ui-btn ui-icon-customSparing hvr-shrink ui-corner-all ui-shadow ui-btn-icon-notext ui-nodisc-icon"></a></div>
-			<div class="ui-block-b center-align-col-container"><a href="history.html" class="ui-btn ui-icon-hisoryList hvr-shrink ui-corner-all ui-shadow ui-btn-icon-notext ui-nodisc-icon"></a></div>
-
-		</div>
-		
-		
-		<!--ICON-BUTTONS-END-->
 		
 		
 		
-		<!--CONTENT-END-->
+		<!--CONTETNT-END-->
 		
+		
+		 
+		  
 		
 		<!-- FOOTER -->
 		<div data-role="footer" data-position="fixed">	
 			<div data-role="navbar">
 				<ul>
-					<li><a href="home.html">Homepage</a></li>
-					<li><a href="oversikt.html">Oversikt</a></li>
+					<li><a href="#home">Homepage</a></li>
+					<li><a href="#pageOversikt">Oversikt</a></li>
 				</ul>	
 			</div>
         </div>
-		
-        
-		
 	</div>
 	<!--################################# Page End #################################-->
+	
 	
 	
 	
