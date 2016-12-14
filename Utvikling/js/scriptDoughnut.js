@@ -39,11 +39,11 @@ var data = {
 				
             ],
             hoverBackgroundColor: [
-                "#704c93",
-                "#8466a3",
-                "#997fb2",
-				"#AD99C1",
-				"#C1B2D1"
+                "rgba(208, 6, 68, 0.58)",
+                "rgba(208, 6, 68, 0.58)",
+                "rgba(208, 6, 68, 0.58)",
+				"rgba(208, 6, 68, 0.58)",
+				"rgba(208, 6, 68, 0.58)"
 				
             ]
         }]
@@ -114,7 +114,7 @@ var chartInstance = new Chart(ctx, {
 });
 
 function month() {
-	chartInstance.data.datasets[0].data[0] = 600;//= [600, 25, 30, 5, 40]; 
+	chartInstance.data.datasets[0].data[0] = 600;
 	chartInstance.data.datasets[0].data[1] = 100;
 	chartInstance.data.datasets[0].data[2] = 120;
 	chartInstance.data.datasets[0].data[3] = 50;
@@ -123,7 +123,7 @@ function month() {
 }
 
 function today() {
-	chartInstance.data.datasets[0].data[0] = 300;//= [600, 25, 30, 5, 40]; 
+	chartInstance.data.datasets[0].data[0] = 300;
 	chartInstance.data.datasets[0].data[1] = 50;
 	chartInstance.data.datasets[0].data[2] = 100;
 	chartInstance.data.datasets[0].data[3] = 30;
@@ -132,7 +132,7 @@ function today() {
 }
 
 function week() {
-	chartInstance.data.datasets[0].data[0] = 450;//= [600, 25, 30, 5, 40]; 
+	chartInstance.data.datasets[0].data[0] = 450;
 	chartInstance.data.datasets[0].data[1] = 75;
 	chartInstance.data.datasets[0].data[2] = 125;
 	chartInstance.data.datasets[0].data[3] = 180;

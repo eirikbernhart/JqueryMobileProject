@@ -69,6 +69,10 @@ hr {
     width: 80%;
 }
 
+.ui-btn-active { 
+	color: #5578af!important; 
+	background: none !important; 
+}
 
 
 
