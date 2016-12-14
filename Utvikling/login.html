@@ -29,7 +29,7 @@
 	<!--Slick js-->
 	<script type="text/javascript" src="css/slick-1.6.0/slick/slick.min.js"></script>
 	
-	
+	<link rel="stylesheet" type="text/css" href="../Utvikling/css/login.css">
 	
 	
 	<script type="text/javascript">
@@ -41,70 +41,34 @@
         slidesToScroll: 1
       });
     });
-  </script>
-	
-
-	
-	
-	 
+  </script> 
 	
 </head>
 
 <body>
 	
-	
-	
-	
-	
 	<!--################################# Page Start LOGG-INN #################################-->
 	<div data-role="page" id="login">
 		
-		
-		
-
-		<h1>
-			<center>
-			 Logg inn
-			</center>
-		</h1>
-	
-		
-		
-	
-		<!--UserName-->
-		<div data-role="fieldcontainer" class="inpLgn1"> 
-                <label for="username">Username:</label>
-                <input type="text" id="username" name="username" required placeholder="Skriv inn brukernavn">
-         </div>  
-		
-		<!--Password-->
-		<div data-role="fieldcontainer" class="inpLgn2"> 
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required placeholder="Skriv inn passord">
-         </div>  
-		
-		<div class = "loggInnBtn">
-			<input type="button" value="Login" onClick=login()>
-		</div>
-		
-		
-		<!-- FOOTER -->
-		<div data-role="footer" data-position="fixed">	
-			
-		</div>
-		
-		
-		
-		
-	
+		<div role="main" class="ui-content" id="loginContent">
+            <center><a id="createUser" href="#create"><span>Klikk her</span> for å opprette en konto</a></center>
+            <hr>
+            <input type="text" name="username" id="username" placeholder="Brukernavn" data-wrapper-class="ui-custom" />
+            <input type="password" name="password" id="password" value="" placeholder="Passord" data-wrapper-class="ui-custom" />
+            <a href="#forgot" id="forgotLink">Glemt passord?</a>
+            <br>
+            <a href="#home" data-role="button" onClick="login()" id="loginBtn" data-transition="flip">LOGG INN</a>
+            <hr>
+            <a href="#"><img alt="facebookLogin" src="../Utvikling/images/Facebook-kopi%202.png" id="facebookLogin"></a>
+        </div>
+        
+        <!-- Background with logo in PNG file -->
+        <div role="img" id="loginBackground">
+        </div>
 	
 	</div>
 	
 	<!--################################# Page End #################################-->
-	
-	
-	
-	
 	
 	
 	<!--Firebase-Local-->

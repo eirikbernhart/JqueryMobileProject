@@ -1,0 +1,127 @@
+@font-face { 
+    font-family: Fedra-Sans-Std-Book;
+    src: url('fonts/Fedra-Sans-Std-Book_17248.ttf');
+}
+.ui-content{
+}
+#loginContent{
+    font-family: Fedra-Sans-Std-Book;
+    background-color: white;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+#forgotLink{
+    text-decoration: none;
+    float: right;
+    color: #007272;
+    font-size: 0.75em;
+}
+#forgotLink:hover{
+    text-decoration: underline;
+}
+#createUser{
+    text-decoration: none;
+    color: #007272;
+    font-size: 0.75em;
+    font-family: sans-serif;
+}
+#createUser span {
+    font-weight: bolder;
+}
+#createUser:hover{
+    text-decoration: underline;
+}
+#loginBtn{
+    color: #007272;
+    margin-top: 5em;
+}
+#loginBackground{
+    background-image: url(../images/Background.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+}
+#username{
+    background-color: #007272;
+    color: white;
+    font-weight: lighter;
+    letter-spacing: 0.1em;
+    text-shadow: none;
+    float: left;
+    margin-bottom: 0.1em;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    width: 80%;
+    margin-left: 10%;
+    background-image: url(../images/icons-png/man-userWhite.png);
+    background-size: 1.5em;
+    background-repeat: no-repeat;
+    background-position: 0.5em 0.4em;
+    text-indent: 2em;
+}
+.ui-input-text.ui-custom {
+    border: none;
+    box-shadow: none;
+}
+#username::-webkit-input-placeholder {
+    color: white;
+    font-weight: lighter;
+    letter-spacing: 0.1em;
+    text-shadow: none;
+    text-indent: 2em;
+}
+#password{
+    background-color: #007272;
+    color: white;
+    font-weight: lighter;
+    letter-spacing: 0.1em;
+    text-shadow: none;
+    float: left;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    margin-bottom: 0.3em;
+    width: 80%;
+    margin-left: 10%;
+    background-image: url(../images/icons-png/padlock.png);
+    background-size: 1.5em;
+    background-repeat: no-repeat;
+    background-position: 0.5em 0.4em;
+    text-indent: 2em;
+}
+
+#password::-webkit-input-placeholder {
+    color: white;
+    font-weight: lighter;
+    letter-spacing: 0.1em;
+    text-shadow: none;
+    text-indent: 2em;
+}
+#facebookLogin{
+    //height: 2.5em;
+    height: 7vh;
+    width: auto;
+    display: block;
+    margin: auto;
+}
+
+/*iPhone < 5:*/
+@media screen and (device-aspect-ratio: 2/3) {}
+
+/*iPhone 5:*/
+@media screen and (device-aspect-ratio: 40/71) {}
+
+/*iPhone 6:*/
+@media screen and (device-aspect-ratio: 375/667) {}
+
+/*iPhone 6 Plus:*/
+@media screen and (device-aspect-ratio: 16/9) {}
+
+/*iPad:*/
+@media screen and (device-aspect-ratio: 3/4) {}
