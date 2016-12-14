@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Page Title</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!--Standard JQM-->
+	<link rel="stylesheet" href="css/themes/default/jquery.mobile-1.4.5.min.css" />
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.mobile-1.4.5.min.js"></script>
+	
+	<!--Firebase-->
+	<script src="https://www.gstatic.com/firebasejs/3.6.1/firebase.js"></script>
+	
+	
+	<!--Chart.js CDN's-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.3.0/Chart.bundle.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.3.0/Chart.min.js"></script>
+	
+	<!--Extra css-->
+	<link rel="stylesheet" href="css/extraCSS/extra.css"/>
+	<link rel=stylesheet href="css/extraIcons/extraIcons.css"/>
+	
+	<!--Slick CSS-->
+	<link rel="stylesheet" type="text/css" href="css/slick-1.6.0/slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="css/slick-1.6.0/slick/slick-theme.css"/>
+	
+	<!--Slick js-->
+	<script type="text/javascript" src="css/slick-1.6.0/slick/slick.min.js"></script>
+	
+	
+	
+	
+	<script type="text/javascript">
+    $(document).ready(function(){
+       $(".regular").slick({
+        dots: true,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1
+      });
+    });
+  </script>
+	
+
+	
+	
+	 
+	
+</head>
+
+<body>
+	
+	
+	<!--################################# Page Start NY-FØRING #################################-->
+	<div data-role="page" id="pageNewData">
+		
+		<!-- header -->
+		<div data-role="header" data-position="fixed">
+			<h1>Ny Føring</h1>
+		</div>
+		
+		
+
+		
+
+		
+		<form>
+		<fieldset data-role="collapsible">
+			<legend>Ny Inntekt</legend>
+				<input type="text" name="textinput-f" id="textinput-f" placeholder="Eks: Narvesen 40,-" value="">
+				<div data-role="controlgroup">
+						<label class="checkbox-inline" for="radio-1-a">Lønn
+							<input type="radio" name="checkbox-1-a" id="radio-1-a">
+						</label>
+						
+						<label class="checkbox-inline" for="radio-1-b">Vips
+							<input type="radio" name="checkbox-1-a" id="radio-1-b">	
+						</label>
+						
+				</div>
+		</fieldset>
+		</form>
+		
+		<form>
+		<fieldset data-role="collapsible">
+			<legend>Ny Utgift</legend>
+				<input type="text" name="textinput-f2" id="textinput-f" placeholder="Eks: Narvesen 40,-" value="">
+				<div data-role="controlgroup">
+						<label class="checkbox-inline" for="radio-2-a">Leie
+							<input type="radio" name="checkbox-1-a" id="radio-2-a">
+						</label>
+						
+						<label class="checkbox-inline" for="radio-2-b">Mat & drikke
+							<input type="radio" name="checkbox-1-a" id="radio-2-b">	
+						</label>
+					
+						<label class="checkbox-inline" for="radio-2-c">Sosialt
+							<input type="radio" name="checkbox-1-a" id="radio-2-c">	
+						</label>
+			</div>
+		</fieldset>
+		</form>
+		
+		
+		
+		
+		
+		
+		
+		
+		  
+		  
+		
+		<!-- footer -->
+		<div data-role="footer" data-position="fixed">	
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home">Homepage</a></li>
+					<li><a href="#pageOversikt">Oversikt</a></li>
+				</ul>	
+			</div>
+        </div>
+	</div>
+	<!--################################# Page End #################################-->
+	
+	
+	
+	
+	
+		
+		
+		
+		
+	<!--Firebase-Local-->
+	<script src="js/firebase.js"></script>
+	<!--Custom js-->
+	<script src="js/appLogic1.js"></script>
+	
+	
+</body>
+
+</html>
