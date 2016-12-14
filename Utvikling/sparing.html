@@ -4,14 +4,18 @@
 <head>
 	<title>Page Title</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
 	
 	<!--Standard JQM-->
 	<link rel="stylesheet" href="css/themes/default/jquery.mobile-1.4.5.min.css" />
 	<script src="js/jquery.min.js"></script>
 	<script src="js/jquery.mobile-1.4.5.min.js"></script>
 	
+	<!--JqueryUi-->
+
+	
 	<!--Firebase-->
-	<script src="https://www.gstatic.com/firebasejs/3.6.1/firebase.js"></script>
+	<!--<script src="https://www.gstatic.com/firebasejs/3.6.1/firebase.js"></script>-->
 	
 	
 	<!--Chart.js CDN's-->
@@ -26,34 +30,30 @@
 	<link rel="stylesheet" type="text/css" href="css/slick-1.6.0/slick/slick.css"/>
 	<link rel="stylesheet" type="text/css" href="css/slick-1.6.0/slick/slick-theme.css"/>
 	
-	<!--Slick js-->
-	<script type="text/javascript" src="css/slick-1.6.0/slick/slick.min.js"></script>
+	<!--Bootstrap-->
+	
+	
 	
 	
 	
 	
 	<script type="text/javascript">
     $(document).ready(function(){
-       $(".regular").slick({
-        dots: true,
-        infinite: true,
-        slidesToShow: 1,
-        slidesToScroll: 1
-      });
+      $('.slickslide').slick({
+                dots: false,
+		  		arrows: true,
+                infinite: true,
+                speed: 500,
+                slidesToShow: 1,
+                slidesToScroll: 1
+	  });
     });
   </script>
-	
 
-	
-	
-	 
-	
 </head>
 
 <body>
 	
-	
-
 	<!--################################# PAGE START: "SPARING" #################################-->
 	<div data-role="page" id="pageSparing">
 		
@@ -62,61 +62,51 @@
 			<h1>Sparing</h1>
 		</div>
 		
-		<!--CONTENT-->  
+		<!--CONTENT-START->  
 		
 		<!--ny sparing-->
-		<form>
-		<fieldset margin-top: 2cm>
-			<legend>Ny Sparing</legend>
-				<input type="text" name="textinput-f" id="textinput-f" placeholder="Eks: Sydentur" value="">
-				<input type="text" name="textinput-f" id="textinput-f" placeholder="22.07.17" value="">
-				<input type="text" name="textinput-f" id="textinput-f" placeholder="8000,-" value="">
-				<button>Ok</button>
-			
-				<div data-role="controlgroup">
-						
-				</div>
-		</fieldset>
-		</form>
-		
-		<!--Aktive sparinger-->
-		<form>
-		<fieldset data-role="collapsible">
-			<legend>Aktive Sparinger</legend>
-				<p>Her kommer data fra firebase</p>
-			
-				<div data-role="controlgroup">
-						
-				</div>
-		</fieldset>
-		</form>
-		
-		<!--Fullførte sparinger-->
-		<form>
-		<fieldset data-role="collapsible">
-			<legend>Fullførte Sparinger</legend>
-				<p>Her kommer data fra firebase</p>
-			
-				<div data-role="controlgroup">
-						
-				</div>
-		</fieldset>
-		</form>
-		
-		<!--Kansellerte sparinger-->
-		<form>
-		<fieldset data-role="collapsible">
-			<legend>Kansellerte Sparinger</legend>
-				<p>Her kommer data fra firebase</p>
-			
-				<div data-role="controlgroup">
-						
-				</div>
-		</fieldset>
-		</form>
+		<h2>Total sparing:</h2>
+		<h3>22 500</h3>
+		<hr>
 		
 		
 		
+		
+		<!--Carousel for selecting month-->
+		<div class="slick-content">
+		<div class="slickslide">
+		
+			<div>
+			  <h2 class="extraCaruItem">OKTOBER</h2> 
+			</div>
+			<div>
+			  <h2 class="extraCaruItem">DESEMBER</h2> 
+			</div >
+			<div>
+			  <h2 class="extraCaruItem">JANUAR</h2> 
+			</div>
+	  
+		</div>
+		</div>
+		
+		<h4>1500/3000</h4>
+		
+		
+	
+		<!--Progress bar-->
+		
+		<input type="range" name="slider-2" id="forrvirrende" data-highlight="true" min="0" max="100" value="50">
+		
+		<script>
+			$( "#pageSparing" ).on( "pagebeforeshow", function( event ) {
+				$("input").remove();
+				$(".ui-slider-handle").remove();
+				$('.ui-slider-track').css('margin','0 15px 0 15px').css('pointer-events','none');
+			});
+		</script>
+		
+		<button class="ui-btn ui-corner-all">Overfør</button>	
+
 		
 		<!--CONTETNT-END-->
 		
@@ -126,12 +116,9 @@
 		
 		<!-- FOOTER -->
 		<div data-role="footer" data-position="fixed">	
-			<div data-role="navbar">
-				<ul>
-					<li><a href="#home">Homepage</a></li>
-					<li><a href="#pageOversikt">Oversikt</a></li>
-				</ul>	
-			</div>
+			
+			
+			
         </div>
 	</div>
 	<!--################################# Page End #################################-->
@@ -139,9 +126,11 @@
 	
 	
 	<!--Firebase-Local-->
-	<script src="js/firebase.js"></script>
+	<!--<script src="js/firebase.js"></script>-->
 	<!--Custom js-->
 	<script src="js/appLogic1.js"></script>
+	<!--Slick js-->
+	<script type="text/javascript" src="css/slick-1.6.0/slick/slick.min.js"></script>
 	
 	
 </body>
