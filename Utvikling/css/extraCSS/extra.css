@@ -3,9 +3,8 @@
 
 
 .ui-btn {
-    width: 40% !important;
+    
 	position: absolute;
-	left: 50%;
 	/**right: 50;**/
 	margin-left: -20%;
 	top: 90%;
@@ -21,17 +20,29 @@
 
 
 h2 {
+	position: absolute;
 	text-align: center;
-	color: whitesmoke;
+	color: #f4f4f4;
 	text-shadow: none;
+	z-index: 1;
+	top: 26.5%;
+	left: 10%;
 	
 }
 
 h3 {
+	position: absolute;
 	text-align: center;
-	color: whitesmoke;
-	font-size: 40px;
+	color: #ddb615;
+	text-shadow: none;
+	z-index: 1;
+	top: 25.5%;
+	left: 70%;
+	font-size: 1.6em;
+	
 }
+
+
 
 h4 {
 	text-align: center;
@@ -84,9 +95,13 @@ hr {
 	color: aliceblue;
 }
 
-.usi-slider {
-	position: absolute !important;
-	top: 30% !important;
+.ui-slider {
+	position: relative!important;
+	top: 150px !important;
+}
+
+.ui-slider-track {
+	height: 40px;
 }
 
 
