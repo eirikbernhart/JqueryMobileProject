@@ -52,6 +52,16 @@ h4 {
 	top: 35%;
 }
 
+h5 {
+	position: absolute;
+	text-align: center;
+	color: whitesmoke;
+	font-size: 30px;
+	top: 10%;
+	left: 50%;
+	
+}
+
 
 
 hr {
