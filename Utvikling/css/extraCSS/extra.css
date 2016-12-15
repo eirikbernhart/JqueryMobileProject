@@ -114,7 +114,9 @@ hr {
 	height: 40px;
 }
 
-
+.ui-btn-icon-right:after {
+	width: 0px !important;
+}
 
 
 
