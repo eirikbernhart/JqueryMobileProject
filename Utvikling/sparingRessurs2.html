@@ -4,11 +4,15 @@
 <head>
 	<title>Page Title</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
 	
 	<!--Standard JQM-->
 	<link rel="stylesheet" href="css/themes/default/jquery.mobile-1.4.5.min.css" />
 	<script src="js/jquery.min.js"></script>
 	<script src="js/jquery.mobile-1.4.5.min.js"></script>
+	
+	<!--JqueryUi-->
+
 	
 	<!--Firebase-->
 	<!--<script src="https://www.gstatic.com/firebasejs/3.6.1/firebase.js"></script>-->
@@ -26,47 +30,97 @@
 	<link rel="stylesheet" type="text/css" href="css/slick-1.6.0/slick/slick.css"/>
 	<link rel="stylesheet" type="text/css" href="css/slick-1.6.0/slick/slick-theme.css"/>
 	
-	<!--Slick js-->
-	<script type="text/javascript" src="css/slick-1.6.0/slick/slick.min.js"></script>
+	<!--Bootstrap-->
+	
+	
 	
 	
 	
 	
 	<script type="text/javascript">
     $(document).ready(function(){
-       $(".regular").slick({
-        dots: true,
-        infinite: true,
-        slidesToShow: 1,
-        slidesToScroll: 1
-      });
+      $('.slickslide').slick({
+                dots: false,
+		  		arrows: true,
+                infinite: true,
+                speed: 500,
+                slidesToShow: 1,
+                slidesToScroll: 1
+	  });
     });
   </script>
-	
 
-	
-	
-	 
-	
 </head>
 
 <body>
 	
-	
-<!--################################# PAGE START: "HISTORY" #################################-->
-	<div data-role="page" id="pageHistory">
+	<!--################################# PAGE START: "SPARING" #################################-->
+	<div data-role="page" id="pageSparing">
 		
 		<!-- HEADER -->
 		<div data-role="header" data-position="fixed">
-			<h1>History</h1>
+			<h1>Sparing</h1>
 		</div>
 		
-		<!--CONTENT-->  
+		<!--CONTENT-START->  
 		
-		<div id="iconImg">
-			<img src="../Design/white-empty-wallet%20(1).png">
+		<!--ny sparing-->
+		<h2>Total sparing:</h2>
+		<h3>22 500</h3>
+		<hr>
+		
+		
+		
+		
+		<!--Carousel for selecting month-->
+		<div class="slick-content">
+		<div class="slickslide">
+		
+			<div>
+			  <h2 class="extraCaruItem">JANUAR</h2> 
+			</div>
+			<div>
+			  <h2 class="extraCaruItem">FEBRUAR</h2> 
+			</div>
+			<div>
+			  <h2 class="extraCaruItem">MARS</h2> 
+			</div>
+			<div>
+			  <h2 class="extraCaruItem">APRIL</h2> 
+			</div>
+			<div>
+			  <h2 class="extraCaruItem">MAI</h2> 
+			</div>
+			<div>
+			  <h2 class="extraCaruItem">JUNI</h2> 
+			</div>
+			<div>
+			  <h2 class="extraCaruItem">JULI</h2> 
+			</div>
+			<div>
+			  <h2 class="extraCaruItem">AUGUST</h2> 
+			</div>
+			<div>
+			  <h2 class="extraCaruItem">SEPTEMBER</h2> 
+			</div>
+			<div>
+			  <h2 class="extraCaruItem">OKTOBER</h2> 
+			</div>
+			<div>
+			  <h2 class="extraCaruItem">NOVEMBER</h2> 
+			</div>
+			<div>
+			  <h2 class="extraCaruItem">DESEMBER</h2> 
+			</div >
+			
+	  
+		</div>
 		</div>
 		
+		<h4>1500/3000</h4>
+		
+		
+	
 		<!--Progress bar-->
 		
 		<input type="range" name="slider-2" id="forrvirrende" data-highlight="true" min="0" max="100" value="50">
@@ -79,40 +133,8 @@
 			});
 		</script>
 		
-		<hr>
-		
-		
-		
-			<!--Firebase-->
-			
-			<!--<pre id="object">
-		
-			</pre>
-		
-			<ul id="history-list">
-		
-			</ul>-->
-			<!--Firebase-End-->
-		
-		<!--List-->
-		<ul data-role="listview" id="utgiftList">
-			<li>Acura</li>
-			<li>Audi</li>
-			<li>BMW</li>
-			<li>Cadillac</li>
-			<li>Ferrari</li>
-			<li>Acura</li>
-			<li>Audi</li>
-			<li>BMW</li>
-			<li>Cadillac</li>
-			<li>Ferrari</li>
-			<li>Acura</li>
-			<li>Audi</li>
-			<li>BMW</li>
-			<li>Cadillac</li>
-			<li>Ferrari</li>
-		</ul>
-		
+		<button class="ui-btn ui-corner-all">Overfør</button>	
+
 		
 		<!--CONTETNT-END-->
 		
@@ -123,12 +145,11 @@
 		<!-- FOOTER -->
 		<div data-role="footer" data-position="fixed">	
 			
+			
+			
         </div>
 	</div>
 	<!--################################# Page End #################################-->
-	
-	
-	
 	
 	
 	
@@ -136,6 +157,8 @@
 	<!--<script src="js/firebase.js"></script>-->
 	<!--Custom js-->
 	<script src="js/appLogic1.js"></script>
+	<!--Slick js-->
+	<script type="text/javascript" src="css/slick-1.6.0/slick/slick.min.js"></script>
 	
 	
 </body>
