@@ -68,14 +68,15 @@
 		</div>
 		
 		<!--Progress bar-->
-		
-		<input type="range" name="slider-2" id="forrvirrende" data-highlight="true" min="0" max="100" value="50">
-		
+		<div id="progressBar">
+		<input type="range" name="slider-2" id="wtf" data-highlight="true" min="0" max="100" value="50">
+		</div>
 		<script>
-			$( "#pageSparing" ).on( "pagebeforeshow", function( event ) {
+			$( "#pageHistory" ).on( "pagebeforeshow", function( event ) {
 				$("input").remove();
 				$(".ui-slider-handle").remove();
 				$('.ui-slider-track').css('margin','0 15px 0 15px').css('pointer-events','none');
+				//$(".ui-slider").css('position', 'absolute');
 			});
 		</script>
 		

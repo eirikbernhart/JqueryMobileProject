@@ -84,6 +84,11 @@ hr {
 	color: aliceblue;
 }
 
+.usi-slider {
+	position: absolute !important;
+	top: 30% !important;
+}
+
 
 
 
