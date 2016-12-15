@@ -20,7 +20,7 @@
 	
 	const utgiftList= document.getElementById("utgiftList");
 	const utgiftListLengde = utgiftList.childNodes.length;
-	alert(utgiftListLengde);
+	
 	
 	
 	
