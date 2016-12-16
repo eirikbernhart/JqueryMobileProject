@@ -19,8 +19,8 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.3.0/Chart.min.js"></script>
 	
 	<!--Extra css-->
-	<link rel="stylesheet" href="css/extraCSS/extra.css"/>
-	<link rel=stylesheet href="css/extraIcons/extraIcons.css"/>
+	<link rel="stylesheet" href="css/nyForing.css"/>
+	
 	
 	<!--Slick CSS-->
 	<link rel="stylesheet" type="text/css" href="css/slick-1.6.0/slick/slick.css"/>
@@ -58,7 +58,8 @@
 		
 		<!-- header -->
 		<div data-role="header" data-position="fixed">
-			<h1>Ny Føring</h1>
+			<h1>Ønsker</h1>
+			 <a href="#home" id="homeBtn" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all" data-transition="slide" data-direction="reverse"  onClick="home()">No text</a>
 		</div>
 		
 		
@@ -67,23 +68,16 @@
 
 		
 		<form>
-		<fieldset data-role="collapsible">
-			<legend>Ny Inntekt</legend>
-				<input type="text" name="textinput-f" id="textinput-f" placeholder="Eks: Narvesen 40,-" value="">
+			<h1><center>Nytt ønske</center></h1>
+				<input type="text" name="textinput-f" id="textinput-f" placeholder="Eks: MacBook Pro 2016,-" value="">
 				<div data-role="controlgroup">
-						<label class="checkbox-inline" for="radio-1-a">Lønn
-							<input type="radio" name="checkbox-1-a" id="radio-1-a">
-						</label>
-						
-						<label class="checkbox-inline" for="radio-1-b">Vips
-							<input type="radio" name="checkbox-1-a" id="radio-1-b">	
-						</label>
 						
 				</div>
-		</fieldset>
+				<button class="ui-btn ui-corner-all">Legg til ønske</button>	
+
 		</form>
 		
-		<form>
+		<!--<form>
 		<fieldset data-role="collapsible">
 			<legend>Ny Utgift</legend>
 				<input type="text" name="textinput-f2" id="textinput-f" placeholder="Eks: Narvesen 40,-" value="">
@@ -101,7 +95,7 @@
 						</label>
 			</div>
 		</fieldset>
-		</form>
+		</form>-->
 		
 		
 		
@@ -115,19 +109,14 @@
 		
 		<!-- footer -->
 		<div data-role="footer" data-position="fixed">	
-			<div data-role="navbar">
-				<ul>
-					<li><a href="#home">Homepage</a></li>
-					<li><a href="#pageOversikt">Oversikt</a></li>
-				</ul>	
-			</div>
+			
         </div>
 	</div>
 	<!--################################# Page End #################################-->
 	
 
 	<!--Custom js-->
-	<script src="js/nyforingLogic.js"></script>
+	<script src="js/oversiktLogic.js"></script>
 	
 	
 </body>
