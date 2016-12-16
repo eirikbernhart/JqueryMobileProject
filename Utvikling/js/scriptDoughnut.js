@@ -113,15 +113,19 @@ var chartInstance = new Chart(ctx, {
 		}
 });
 
+//NB! CHARTS CURRENTLY RESPECTS RELATIONAL MATH, SO DIVIDING BY 31 FOR "DAY-TO-MONTH RATIO", YIELD SAME VISUALS ON GRAPH**/
+
+//GETS DATA FROM DATABAS:FIREBASE
 function month() {
-	chartInstance.data.datasets[0].data[0] = 600;
-	chartInstance.data.datasets[0].data[1] = 100;
-	chartInstance.data.datasets[0].data[2] = 120;
-	chartInstance.data.datasets[0].data[3] = 50;
-	chartInstance.data.datasets[0].data[4] = 40;
+	chartInstance.data.datasets[0].data[0] = arrayOfData[0];
+	chartInstance.data.datasets[0].data[1] = arrayOfData[1];
+	chartInstance.data.datasets[0].data[2] = arrayOfData[2];
+	chartInstance.data.datasets[0].data[3] = arrayOfData[3];
+	chartInstance.data.datasets[0].data[4] = arrayOfData[4];
 	chartInstance.update();
 }
 
+//JUST HARDCODED
 function today() {
 	chartInstance.data.datasets[0].data[0] = 300;
 	chartInstance.data.datasets[0].data[1] = 50;
@@ -131,6 +135,7 @@ function today() {
 	chartInstance.update();
 }
 
+//JUST HARDCODED
 function week() {
 	chartInstance.data.datasets[0].data[0] = 450;
 	chartInstance.data.datasets[0].data[1] = 75;
@@ -139,5 +144,6 @@ function week() {
 	chartInstance.data.datasets[0].data[4] = 120;
 	chartInstance.update();
 }
+
 
 

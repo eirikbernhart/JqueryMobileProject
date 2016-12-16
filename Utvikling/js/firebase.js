@@ -1,3 +1,6 @@
+var arrayOfData = [];
+
+
 (function() {
 	
 	
@@ -15,28 +18,44 @@
 	
 	//Get elements
 	const preObject = document.getElementById('object');
-	const ulList = document.getElementById('history-list');
+	const ulList = document.getElementById('list');
+	
+	
+	
+	
+	
+	
 	
 	//CREATE REFERENCES
 	const dbRefObject = firebase.database().ref().child('object');
-	const dbRefList = dbRefObject.child('test');
+	const dbRefList = dbRefObject.child('testDataGraph');
+	
 	
 	
 	//SYNCH OBJECT CHANGES: PRINTS OUT THE "OBJECT"
 	dbRefObject.on('value', snap => {
-		preObject.innerText = JSON.stringify(snap.val(), null, 3);
+		//preObject.innerText = JSON.stringify(snap.val(), null, 3);
+		//alert("fsMetod ran"); //THIS WORKS!
+		//month(snap.val());
 	});
 	
 	
-	//SYNCH LIST CHANGES
+	//SYNCH LIST CHANGES //RUNS FOR EACH CHILD ELEMENT IN LIST
 	dbRefList.on('child_added',  snap => {
 		
-		const li = document.createElement('li');
-		li.innerText = snap.val();
-		li.id = snap.key;
-		ulList.appendChild(li);
+
+		/**This works with simple list**/
+		/*$('#utgiftList').append('<li class = "ui-li-static ui-body-inherit" <li>' + snap.key + ': ' + snap.val() + '</li>');*/
+		//alert("fsMetod ran"); //THIS WORKS!
 		
+		arrayOfData.push(snap.val());
+		//month(snap.val()); //THIS KINDA WORKS
+		
+		//alert(arrayOfData);
+		//alertTest(arrayOfData);
 	});
+	
+	
 	
 	//SYNCH: POPULATE LIST WITH CHILD
 	/**dbRefList.on('value',  snap => {
@@ -65,6 +84,7 @@
 		
 	});
 	
+	
 
 	
 	
@@ -74,3 +94,7 @@
 	
 	
 }());
+
+function alertTest(){
+	alert(arrayOfData);
+}
