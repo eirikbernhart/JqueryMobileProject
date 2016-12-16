@@ -14,3 +14,6 @@ function vissparing() {
 function nyforing() {
     window.location.href = "nyforing.html";
 }
+function login() {
+    window.location.href = "login.html";
+}

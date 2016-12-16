@@ -23,17 +23,17 @@
 		<!--Left panel/toolbar-->
         <div data-role="panel" id="left-panel" data-display="overlay">
             <ul data-role="listview">
-                <li data-theme="b"><a href="#" data-rel="close"></a></li>
-				<li><a href="#" data-transition = "slide"></a></li>
-                <li><a href="#" data-transition = "slide"></a></li>
-                <li><a href="#" data-transition = "slide"></a></li>
+                <li data-theme="b"><a href="#" data-rel="close" id="exit"></a></li>
+				<li><a href="#" data-transition = "slide" id="telefon"></a></li>
+                <li><a href="#" data-transition = "slide" id="chat"></a></li>
+                <li><a href="#" data-transition = "slide" id="epost"></a></li>
+                <li><a href="#login" onclick="login()" data-transition = "slide" id="logout"></a></li>
             </ul>
         </div>
 	
 		<!-- HEADER -->
         
 		<div data-role="header" data-position="fixed">
-
 			<img src="images/logo.png" class="logo" />
 			<a href="#left-panel" data-icon="bars" data-role="button" data-iconpos="notext" data-iconshadow="false"></a>
 		</div>

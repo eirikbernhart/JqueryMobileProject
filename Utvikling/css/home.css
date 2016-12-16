@@ -10,7 +10,6 @@
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3aa1be', endColorstr='#2e7082',GradientType=0 );
 }
 /* ----------------------- HEADER START ----------------------- */
-
 .ui-bar-inherit  {
 	background-color: #147e9d !important;
 }
@@ -84,6 +83,32 @@
 .ui-panel-display-overlay {
     width: 7.5em;
     color: #147E9D;
+}
+#exit {
+    background-image: url(../images/add.png);
+    transform: rotate(45deg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#telefon {
+    background-image: url(../images/phone-receiver.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#chat {
+    background-image: url(../images/chat.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#epost {
+    background-image: url(../images/close-envelope.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#logout {
+    background-image: url(../images/exit.png);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 /*iPhone < 5:*/
