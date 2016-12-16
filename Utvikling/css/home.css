@@ -36,34 +36,42 @@
 .bruksKonto {
     background-image: url(../images/wallet.png);
     background-position: center;
+    background-repeat: no-repeat;
 }
 .oversikt {
-    background-image: url(../images/benefit-chart.png);
+    background-image: url(../images/stats.png);
     background-position: center;
+    background-repeat: no-repeat;
 }
 .sparing {
-    background-image: url(../images/piggy-bank-kopi.png);
+    background-image: url(../images/piggy-bank.png);
     background-position: center;
+    background-repeat: no-repeat;
 }
 .onsker {
-    background-image: url(../images/gift-kopi.png);
+    background-image: url(../images/gift.png);
     background-position: center;
+    background-repeat: no-repeat;
 }
 .spareTips {
-    background-image: url(../images/light-bulb.png);
+    background-image: url(../images/idea.png);
     background-position: center;
+    background-repeat: no-repeat;
 }
 .profil {
-    background-image: url(../images/man-userWhite.png);
+    background-image: url(../images/man-user.png);
     background-position: center;
+    background-repeat: no-repeat;
 }
 .instillinger {
     background-image: url(../images/settings.png);
     background-position: center;
+    background-repeat: no-repeat;
 }
 .leggTil {
     background-image: url(../images/add.png);
     background-position: center;
+    background-repeat: no-repeat;
 }
 
 /*iPhone < 5:*/
