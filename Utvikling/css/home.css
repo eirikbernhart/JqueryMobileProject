@@ -6,7 +6,9 @@
     background-color: #147E9D;
 }
 /* ------------------------------ HEADER START ------------------------------ */
-
+.ui-bar-inherit {
+    background-color: #147E9D !important;
+}
 .menu {
     display: inline-block;
     cursor: pointer;
@@ -36,25 +38,32 @@
     background-position: center;
 }
 .oversikt {
-    
+    background-image: url(../images/benefit-chart.png);
+    background-position: center;
 }
 .sparing {
-    
+    background-image: url(../images/piggy-bank-kopi.png);
+    background-position: center;
 }
 .onsker {
-    
+    background-image: url(../images/gift-kopi.png);
+    background-position: center;
 }
 .spareTips {
-    
+    background-image: url(../images/light-bulb.png);
+    background-position: center;
 }
 .profil {
-    
+    background-image: url(../images/man-userWhite.png);
+    background-position: center;
 }
 .instillinger {
-    
+    background-image: url(../images/settings.png);
+    background-position: center;
 }
 .leggTil {
-    
+    background-image: url(../images/add.png);
+    background-position: center;
 }
 
 /*iPhone < 5:*/
