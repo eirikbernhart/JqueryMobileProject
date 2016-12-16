@@ -1,6 +1,6 @@
 
 function bruksKonto() {
-    window.location.href = "bruksKonto.html";
+    window.location.href = "bruksKontoEdt.html";
 }
 function oversikt() {
     window.location.href = "oversikt.html";
