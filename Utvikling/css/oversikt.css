@@ -1,0 +1,84 @@
+
+
+
+
+
+.ui-btn {
+	color: whitesmoke !important;
+	background: #3aa1be;
+	background: -moz-linear-gradient(top,  #3aa1be 0%, #378ca3 31%, #2e7082 100%);
+	background: -webkit-linear-gradient(top,  #3aa1be 0%,#378ca3 31%,#2e7082 100%);
+	background: linear-gradient(to bottom,  #3aa1be 0%,#378ca3 31%,#2e7082 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3aa1be', endColorstr='#2e7082',GradientType=0 );
+}
+
+
+
+
+
+
+
+.extraCaruItem {
+	width: 50%;
+	left: 50%;
+	position: relative;
+	margin-left: -25%;
+	color: whitesmoke;
+	
+}
+
+.mysDChartCSS {
+	position: absolute;
+	top: 45%;
+	left: 100%;
+	margin-left: -5o	%;
+	
+}
+
+h2 {
+	text-align: center;
+	color: whitesmoke;
+	text-shadow: none;
+	
+}
+
+
+
+
+
+hr {
+	width: 80%;
+}
+
+#pageOversikt {
+	background: #3aa1be;
+	background: -moz-linear-gradient(top,  #3aa1be 0%, #378ca3 31%, #2e7082 100%);
+	background: -webkit-linear-gradient(top,  #3aa1be 0%,#378ca3 31%,#2e7082 100%);
+	background: linear-gradient(to bottom,  #3aa1be 0%,#378ca3 31%,#2e7082 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3aa1be', endColorstr='#2e7082',GradientType=0 );
+}
+
+.slickslide {
+    height: 70px;
+    
+}
+
+.slick-content {
+	margin: auto;
+    padding: 20px;
+    width: 80%;
+}
+
+.ui-btn-active { 
+	color: #5578af!important; 
+	background: none !important; 
+}
+
+
+
+
+
+
+
+
+
