@@ -15,26 +15,35 @@
 	
 	//Get elements
 	const preObject = document.getElementById('object');
-	const ulList = document.getElementById('history-list');
+	//const ulList = document.getElementById('list');
+	
+	
+	
+	
+	
+	
 	
 	//CREATE REFERENCES
 	const dbRefObject = firebase.database().ref().child('object');
-	const dbRefList = dbRefObject.child('test');
+	const dbRefList = dbRefObject.child('testDataMonth');
 	
 	
 	//SYNCH OBJECT CHANGES: PRINTS OUT THE "OBJECT"
-	dbRefObject.on('value', snap => {
+	/*dbRefObject.on('value', snap => {
 		preObject.innerText = JSON.stringify(snap.val(), null, 3);
-	});
+	});*/
 	
 	
 	//SYNCH LIST CHANGES
 	dbRefList.on('child_added',  snap => {
 		
-		const li = document.createElement('li');
-		li.innerText = snap.val();
-		li.id = snap.key;
-		ulList.appendChild(li);
+
+		/**This works with simple list**/
+		/*$('#utgiftList').append('<li class = "ui-li-static ui-body-inherit" <li>' + snap.key + ': ' + snap.val() + '</li>');*/
+		
+		/**This works with complex list**/
+		
+		
 		
 	});
 	
