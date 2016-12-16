@@ -117,31 +117,31 @@ var chartInstance = new Chart(ctx, {
 
 //GETS DATA FROM DATABAS:FIREBASE
 function month() {
-	chartInstance.data.datasets[0].data[0] = arrayOfData[0];
-	chartInstance.data.datasets[0].data[1] = arrayOfData[1];
-	chartInstance.data.datasets[0].data[2] = arrayOfData[2];
-	chartInstance.data.datasets[0].data[3] = arrayOfData[3];
-	chartInstance.data.datasets[0].data[4] = arrayOfData[4];
+	chartInstance.data.datasets[0].data[0] = arrayOfDataMonth[1];
+	chartInstance.data.datasets[0].data[1] = arrayOfDataMonth[3];
+	chartInstance.data.datasets[0].data[2] = arrayOfDataMonth[4];
+	chartInstance.data.datasets[0].data[3] = arrayOfDataMonth[2];
+	chartInstance.data.datasets[0].data[4] = arrayOfDataMonth[0];
 	chartInstance.update();
 }
 
 //JUST HARDCODED
 function today() {
-	chartInstance.data.datasets[0].data[0] = 300;
-	chartInstance.data.datasets[0].data[1] = 50;
-	chartInstance.data.datasets[0].data[2] = 100;
-	chartInstance.data.datasets[0].data[3] = 30;
-	chartInstance.data.datasets[0].data[4] = 80;
+	chartInstance.data.datasets[0].data[0] = 325;
+	chartInstance.data.datasets[0].data[1] = 200;
+	chartInstance.data.datasets[0].data[2] = 120;
+	chartInstance.data.datasets[0].data[3] = 188;
+	chartInstance.data.datasets[0].data[4] = 1000;
 	chartInstance.update();
 }
 
 //JUST HARDCODED
 function week() {
-	chartInstance.data.datasets[0].data[0] = 450;
-	chartInstance.data.datasets[0].data[1] = 75;
-	chartInstance.data.datasets[0].data[2] = 125;
-	chartInstance.data.datasets[0].data[3] = 180;
-	chartInstance.data.datasets[0].data[4] = 120;
+	chartInstance.data.datasets[0].data[0] = 2500;
+	chartInstance.data.datasets[0].data[1] = 800;
+	chartInstance.data.datasets[0].data[2] = 480;
+	chartInstance.data.datasets[0].data[3] = 840;
+	chartInstance.data.datasets[0].data[4] = 1400;
 	chartInstance.update();
 }
 

@@ -1,4 +1,4 @@
-var arrayOfData = [];
+var arrayOfDataMonth = [];
 
 
 (function() {
@@ -28,7 +28,8 @@ var arrayOfData = [];
 	
 	//CREATE REFERENCES
 	const dbRefObject = firebase.database().ref().child('object');
-	const dbRefList = dbRefObject.child('testDataGraph');
+	//const dbRefList = dbRefObject.child('testDataGraphDay');
+	const dbRefList = dbRefObject.child('testDataMonth');
 	
 	
 	
@@ -48,8 +49,8 @@ var arrayOfData = [];
 		/*$('#utgiftList').append('<li class = "ui-li-static ui-body-inherit" <li>' + snap.key + ': ' + snap.val() + '</li>');*/
 		//alert("fsMetod ran"); //THIS WORKS!
 		
-		arrayOfData.push(snap.val());
-		//month(snap.val()); //THIS KINDA WORKS
+		//arrayOfDataDay.push(snap.val());
+		arrayOfDataMonth.push(snap.val());
 		
 		//alert(arrayOfData);
 		//alertTest(arrayOfData);
