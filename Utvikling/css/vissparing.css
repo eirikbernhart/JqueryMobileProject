@@ -35,6 +35,8 @@
 }
 
 
+
+
 .inpLgn1 {
 	width: 60%;
 	left: 50%;
@@ -65,6 +67,14 @@
 	margin-left: -25%;
 	color: whitesmoke;
 	
+}
+
+h1 {
+	text-align: center;
+	color: whitesmoke;
+	font-size: 60px;
+	position: relative;
+	top: 35%;
 }
 
 h2 {
@@ -103,6 +113,10 @@ hr {
 	background: -webkit-linear-gradient(top,  #3aa1be 0%,#378ca3 31%,#2e7082 100%);
 	background: linear-gradient(to bottom,  #3aa1be 0%,#378ca3 31%,#2e7082 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3aa1be', endColorstr='#2e7082',GradientType=0 );
+}
+
+.ui-bar-inherit  {
+	background-color: #147e9d !important;
 }
 
 .slickslide {

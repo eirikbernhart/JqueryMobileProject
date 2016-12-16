@@ -15,7 +15,13 @@
 
 
 
-
+h1 {
+	text-align: center;
+	color: whitesmoke;
+	font-size: 60px;
+	position: relative;
+	top: 35%;
+}
 
 
 .extraCaruItem {
@@ -29,9 +35,9 @@
 
 .mysDChartCSS {
 	position: absolute;
-	top: 45%;
+	top: 40%;
 	left: 100%;
-	margin-left: -5o	%;
+	margin-left: -5%;
 	
 }
 
@@ -70,12 +76,18 @@ hr {
 }
 
 .ui-btn-active { 
-	color: #5578af!important; 
+	color: #654444!important; 
 	background: none !important; 
 }
 
+.ui-bar-inherit  {
+	background-color: #147e9d !important;
+}
 
-
+.ui-link {
+	height: 30px !important;
+	/*align-content: center !important;*/
+}
 
 
 
