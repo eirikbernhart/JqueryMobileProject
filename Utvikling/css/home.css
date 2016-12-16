@@ -5,7 +5,7 @@
 #home {
     background-color: #147E9D;
 }
-/* ------------------------------ HEADER START ------------------------------ */
+/* ----------------------- HEADER START ----------------------- */
 .ui-bar-inherit {
     background-color: #147E9D !important;
 }
@@ -20,10 +20,9 @@
 .logo {
     display: inline-block;
     width: 30px;
-    margin-left: 130px;
+    margin-left: 140px;
 }
-
-/* ------------------------------ CONTENT START ------------------------------ */
+/* ----------------------- CONTENT START ----------------------- */
 .bruksKonto {
     background-image: url(../images/wallet.png);
     background-position: center;
