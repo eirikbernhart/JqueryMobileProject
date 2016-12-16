@@ -16,9 +16,9 @@ function home() {
 function oversikt() {
     window.location.href = "home.html";
 }        
-function history {
+/*function history {
     window.location.href = "home.html";
-}
+}*/
 function sparing {
     window.location.href = "home.html";
 }

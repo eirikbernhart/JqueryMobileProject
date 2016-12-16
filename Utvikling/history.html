@@ -19,8 +19,8 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.3.0/Chart.min.js"></script>
 	
 	<!--Extra css-->
-	<link rel="stylesheet" href="css/extraCSS/extra.css"/>
-	<link rel=stylesheet href="css/extraIcons/extraIcons.css"/>
+	<link rel="stylesheet" href="css/history.css"/>
+	
 	
 	<!--Slick CSS-->
 	<link rel="stylesheet" type="text/css" href="css/slick-1.6.0/slick/slick.css"/>
@@ -54,7 +54,7 @@
 	
 	
 <!--################################# PAGE START: "HISTORY" #################################-->
-	<div data-role="page" id="history">
+	<div data-role="page" id="pageHistory">
 		
 		<!-- HEADER -->
 		<div data-role="header" data-position="fixed">
@@ -63,17 +63,76 @@
 		
 		<!--CONTENT-->  
 		
+		<h5><center>Utgifter</center></h5>
 		
-			<!--Firebase-->
-			<pre id="object">
+		<div id="iconImg">
+			<img src="../Design/white-empty-wallet%20(1).png">
+		</div>
 		
-			</pre>
+		<h2>5642</h2>
+		<h3>/ 15 250</h3>
 		
-			<ul id="history-list">
+		<!--Progress bar-->
 		
-			</ul>
+		
+		
+		<div id="progressBar">
+		<input type="range" name="slider-2" id="wtf" data-highlight="true" min="0" max="100" value="37">
+		</div>
+		<script>
+			$( "#pageHistory" ).on( "pagebeforeshow", function( event ) {
+				$("input").remove();
+				$(".ui-slider-handle").remove();
+				$('.ui-slider-track').css('margin','0 15px 0 15px').css('pointer-events','none');
+				//$(".ui-slider").css('position', 'absolute');
+			});
+		</script>
+		
+		<hr>
+		
+		
+		
+			<!--Firebase-Simple-List-Test->
+			
+			<!--<pre id="object">
+		
+			</pre>-->
+		
+			<!--<ul id="list">
+		
+			</ul>-->
 			<!--Firebase-End-->
 		
+		<!--Complex-List-->
+		<ul data-role="listview" id="utgiftList">
+			<li><a href="#">
+                <img src="../Design/plate-fork-and-knife-white.png"/>
+                <p>Kiwi Ryen</p>
+				<p>182,-</p>
+            </a>
+			</li>
+			<li><a href="#">
+                <img src="../Design/shopping-cart-white-shape.png"/>
+                <p>Zara Hedgehaugsveien</p>
+				<p>3000,-</p>
+            </a>
+			</li>
+			<li><a href="#">
+                <img src="../Design/theater-masks-couple-white.png"/>
+                <p>Uteliv</p>
+				<p>600,-</p>
+            </a>
+			</li>
+		</ul>
+		
+		<!--Simple-List-THIS WORKS!-->
+		<!--<ul data-role="listview" id="utgiftList">
+			<li>Acura</li>
+			<li>Audi</li>
+			<li>BMW</li>
+			<li>Cadillac</li>
+			<li>Ferrari</li>
+		</ul>-->
 		
 		<!--CONTETNT-END-->
 		
@@ -83,12 +142,7 @@
 		
 		<!-- FOOTER -->
 		<div data-role="footer" data-position="fixed">	
-			<div data-role="navbar">
-				<ul>
-					<li><a href="#home">Homepage</a></li>
-					<li><a href="#pageOversikt">Oversikt</a></li>
-				</ul>	
-			</div>
+			
         </div>
 	</div>
 	<!--################################# Page End #################################-->
@@ -99,7 +153,7 @@
 	
 	
 	<!--Firebase-Local-->
-	<script src="js/firebase.js"></script>
+	<script src="js/firebaseHistory.js"></script>
 	<!--Custom js-->
 	<script src="js/appLogic1.js"></script>
 	
