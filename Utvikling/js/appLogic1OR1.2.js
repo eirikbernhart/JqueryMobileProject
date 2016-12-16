@@ -30,11 +30,4 @@
 			$("#mainList").listview("refresh");
 		}
 
-		function addItemToFirebase() {
-			
-			var val = {"a":"a"};
-			
-			arrayOfDataMonth.push(val);
-		}
-
 	
