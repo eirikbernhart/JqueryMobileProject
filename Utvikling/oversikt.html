@@ -4,6 +4,7 @@
 <head>
 	<title>Page Title</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
 	
 	<!--Standard JQM-->
 	<link rel="stylesheet" href="css/themes/default/jquery.mobile-1.4.5.min.css" />
@@ -19,27 +20,28 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.3.0/Chart.min.js"></script>
 	
 	<!--Extra css-->
-	<link rel="stylesheet" href="css/extraCSS/extra.css"/>
-	<link rel=stylesheet href="css/extraIcons/extraIcons.css"/>
+	<link rel="stylesheet" href="css/oversikt.css"/>
+	
 	
 	<!--Slick CSS-->
 	<link rel="stylesheet" type="text/css" href="css/slick-1.6.0/slick/slick.css"/>
 	<link rel="stylesheet" type="text/css" href="css/slick-1.6.0/slick/slick-theme.css"/>
 	
-	<!--Slick js-->
-	<script type="text/javascript" src="css/slick-1.6.0/slick/slick.min.js"></script>
+	
 	
 	
 	
 	
 	<script type="text/javascript">
     $(document).ready(function(){
-       $(".regular").slick({
-        dots: true,
-        infinite: true,
-        slidesToShow: 1,
-        slidesToScroll: 1
-      });
+      $('.slickslide').slick({
+                dots: false,
+		  		arrows: true,
+                infinite: true,
+                speed: 500,
+                slidesToShow: 1,
+                slidesToScroll: 1
+	  });
     });
   </script>
 	
@@ -63,15 +65,64 @@
 		
 		<!--CONTENT-->  
 		
+		<!--Carousel for selecting month-->
+		<div class="slick-content">
+		<div class="slickslide">
+		
+			<div>
+			  <h2 class="extraCaruItem">JANUAR</h2> 
+			</div>
+			<div>
+			  <h2 class="extraCaruItem">FEBRUAR</h2> 
+			</div>
+			<div>
+			  <h2 class="extraCaruItem">MARS</h2> 
+			</div>
+			<div>
+			  <h2 class="extraCaruItem">APRIL</h2> 
+			</div>
+			<div>
+			  <h2 class="extraCaruItem">MAI</h2> 
+			</div>
+			<div>
+			  <h2 class="extraCaruItem">JUNI</h2> 
+			</div>
+			<div>
+			  <h2 class="extraCaruItem">JULI</h2> 
+			</div>
+			<div>
+			  <h2 class="extraCaruItem">AUGUST</h2> 
+			</div>
+			<div>
+			  <h2 class="extraCaruItem">SEPTEMBER</h2> 
+			</div>
+			<div>
+			  <h2 class="extraCaruItem">OKTOBER</h2> 
+			</div>
+			<div>
+			  <h2 class="extraCaruItem">NOVEMBER</h2> 
+			</div>
+			<div>
+			  <h2 class="extraCaruItem">DESEMBER</h2> 
+			</div >
+			
+	  
+		</div>
+		</div>
+		<hr>
+		
 		
 		
 		<!--Doughnut chart-->
-        <canvas id="myDChart" width="256" height="256"></canvas>
+		
+		
+		
+		<div style="position: absolute; left: 50%; top: 40%;">
+        <canvas id="myDChart" width="256" height="256" class="myDChartCSS" style="position: relative; left: -50%;"></canvas>
 		<script src="js/scriptDoughnut.js"></script>
+		</div>
+		<!--Tab-menu-->
 
-		
-		
-		
 		<!--CONTETNT-END-->
 		
 		
@@ -79,11 +130,13 @@
 		  
 		
 		<!-- FOOTER -->
-		<div data-role="footer" data-position="fixed">	
+		<div data-role="footer" data-position="fixed" class="navBarCSS">	
+			
 			<div data-role="navbar">
 				<ul>
-					<li><a href="#home">Homepage</a></li>
-					<li><a href="#pageOversikt">Oversikt</a></li>
+					<li><a href="#" onClick=month()>Siste måned</a></li>
+					<li><a href="#" onClick=today()>idag</a></li>
+					<li><a href="#" onClick=week()>Siste uken</a></li>
 				</ul>	
 			</div>
         </div>
@@ -96,7 +149,12 @@
 	<!--Firebase-Local-->
 	<script src="js/firebase.js"></script>
 	<!--Custom js-->
-	<script src="js/appLogic1.js"></script>
+	<script src="js/oversiktLogic.js"></script>
+	<!--Slick js-->
+	<script type="text/javascript" src="css/slick-1.6.0/slick/slick.min.js"></script>
+	<!--Chart js-->
+	<script src="js/scriptDoughnut.js"></script>
+		
 	
 	
 </body>
