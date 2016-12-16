@@ -4,3 +4,6 @@ function addItem(clicked_id) {
     $("#mainList").append("<li><a href='#'>" + category + "</a></li>");
     $("#mainList").listview("refresh");
 		}
+function home() {
+    window.location.href = "home.html";
+}
