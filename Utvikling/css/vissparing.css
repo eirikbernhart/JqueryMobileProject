@@ -30,6 +30,9 @@
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3aa1be', endColorstr='#2e7082',GradientType=0 );
 }
 
+#homeBtn {
+	width: 30px !important;	
+}
 
 
 .inpLgn1 {
