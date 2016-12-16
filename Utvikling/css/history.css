@@ -19,13 +19,23 @@
 }
 
 
+
+h1 {
+	text-align: center;
+	color: whitesmoke;
+	font-size: 60px;
+	position: relative;
+	top: 35%;
+}
+
+
 h2 {
 	position: absolute;
 	text-align: center;
 	color: #f4f4f4;
 	text-shadow: none;
 	z-index: 1;
-	top: 26.5%;
+	top: 165px;
 	left: 10%;
 	
 }
@@ -36,7 +46,7 @@ h3 {
 	color: #ddb615;
 	text-shadow: none;
 	z-index: 1;
-	top: 25.5%;
+	top: 160px;
 	left: 70%;
 	font-size: 1.6em;
 	
@@ -61,7 +71,7 @@ h5 {
 	text-align: center;
 	color: whitesmoke;
 	font-size: 30px;
-	top: 10%;
+	top: 5%;
 	left: 50%;
 	
 }
@@ -70,7 +80,7 @@ h5 {
 
 hr {
 	position: absolute;
-	top: 25%;
+	top: 20%;
 	left: 10%;
 	width: 80%;
 }
@@ -87,7 +97,7 @@ hr {
 
 #iconImg {
 	position: absolute;
-	top: 15%;
+	top: 10%;
 	left: 20%;
 }
 
@@ -111,7 +121,7 @@ hr {
 
 .ui-slider {
 	position: relative!important;
-	top: 150px !important;
+	top: 120px !important;
 }
 
 .ui-slider-track {
@@ -121,6 +131,11 @@ hr {
 .ui-btn-icon-right:after {
 	width: 0px !important;
 }
+
+.ui-navbar {
+	height: 100px !important;
+}
+
 
 
 
