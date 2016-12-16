@@ -19,12 +19,29 @@
 	
 	<!--################################# Page Start HOME ################################# -->
 	<div data-role="page" id="home">
+		
+		<!--Left panel/toolbar-->
+        <div data-role="panel" id="left-panel" data-display="overlay">
+            <ul data-role="listview">
+                <li data-theme="b" data-icon="delete"><a href="#" data-rel="close"></a></li>
+				<li><a href="#" data-transition = "slide">Total</a></li>
+                <li><a href="#" data-transition = "slide">Incomes</a></li>
+                <li><a href="#" data-transition = "slide">Options</a></li>
+            </ul>
+        </div>
 	
 		<!-- HEADER -->
-        <div data-role="header" data-position="fixed" id="header">
+        
+		<div data-role="header" data-position="fixed">
+			<h1>Home</h1>
+			<img src="images/logo.png" class="logo" />
+			<a href="#left-panel" data-icon="bars" data-role="button" data-iconpos="notext" data-iconshadow="false">Menu</a>
+		</div>
+		
+		<!--<div data-role="header" data-position="fixed" id="header">
             <img src="../Design/menu-kopi.png" class="menu" />
             <img src="images/logo.png" class="logo" />
-		</div>
+		</div>-->
 
         <div class="ui-grid-a" id="homeGrid">
 			<div class="ui-block-a"><div class="ui-bar bruksKonto" style="height:140px"><a href="#bruksKonto" onclick="bruksKonto()"></a></div></div>
