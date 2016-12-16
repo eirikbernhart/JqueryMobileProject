@@ -1,0 +1,72 @@
+@font-face { 
+    font-family: Fedra-Sans-Std-Book;
+    src: url('fonts/Fedra-Sans-Std-Book_17248.ttf');
+}
+#home {
+    background-color: #147E9D;
+}
+/* ------------------------------ HEADER START ------------------------------ */
+.menu {
+    display: inline-block;
+    cursor: pointer;
+    width: 35px;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+/* Logo */
+.logo {
+    display: inline-block;
+    width: 30px;
+    margin-left: 140px;
+}
+
+/* ------------------------------ CONTENT START ------------------------------ */
+.box {
+    float: left;
+    background-color: #F47B20;
+    border: 1px solid white;
+    padding: 72px 90px;
+    display: inline-block;
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.history {
+    background-image: url(../images/wallet.png);
+    background-position: center;
+}
+.oversikt {
+    
+}
+.sparing {
+    
+}
+.onsker {
+    
+}
+.spareTips {
+    
+}
+.profil {
+    
+}
+.instillinger {
+    
+}
+.leggTil {
+    
+}
+
+/*iPhone < 5:*/
+@media screen and (device-aspect-ratio: 2/3) {}
+
+/*iPhone 5:*/
+@media screen and (device-aspect-ratio: 40/71) {}
+
+/*iPhone 6:*/
+@media screen and (device-aspect-ratio: 375/667) {}
+
+/*iPhone 6 Plus:*/
+@media screen and (device-aspect-ratio: 16/9) {}
+
+/*iPad:*/
+@media screen and (device-aspect-ratio: 3/4) {}

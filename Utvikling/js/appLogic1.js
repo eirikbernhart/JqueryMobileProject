@@ -4,30 +4,23 @@
        
 	   	});**/
 		
-		
-		function login() {
-			var username = $("#username").val();
-			var password = $("#password").val();
-			
-			/**if(password == "password") {
-				window.location.href = "#home";
-			}**/
-			
-			
-			
-			
-			
-			
-			window.location.href = "home.html";
-			
-			console.log("Welcome " + "user: " + username + " with pass: " + password)
-		}
-		
-		function addItem(clicked_id) {	
-			var category = clicked_id.value;
-			//alert(category);
-			$("#mainList").append("<li><a href='#'>" + category + "</a></li>");
-			$("#mainList").listview("refresh");
-		}
+
+
+function home() {
+    window.location.href = "oversikt.html";
+    window.location.href = "sparing";
+    window.location.href = "nyforing.html";
+    window.location.href = "login.html";
+    window.location.href = "history.html";
+}
+function oversikt() {
+    window.location.href = "home.html";
+}        
+function history {
+    window.location.href = "home.html";
+}
+function sparing {
+    window.location.href = "home.html";
+}
 
 	
