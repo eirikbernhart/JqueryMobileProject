@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Page Title</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/themes/default/jquery.mobile-1.4.5.min.css" />
+	<script src="js/jquery.min.js"></script>
+    <script src="js/jquery.mobile-1.4.5.min.js"></script>
+    
+    <!--Chart.js CDN's-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.3.0/Chart.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.3.0/Chart.min.js"></script>  
+    
+    
+    <!--Extra css-->
+    <link rel=stylesheet href="css/extraIcons/extraIcons.css" />
+    
+</head>
+
+<body>
+	
+	
+
+    <div data-role="page" id = "home" >
+		
+		<!--Left panel/toolbar-->
+        <div data-role="panel" id="left-panel" data-display="overlay">
+            <ul data-role="listview">
+                <li data-theme="b" data-icon="delete"><a href="#" data-rel="close"></a></li>
+				<li><a href="#" data-transition = "slide">Total</a></li>
+                <li><a href="#" data-transition = "slide">Incomes</a></li>
+                <li><a href="#" data-transition = "slide">Options</a></li>
+            </ul>
+        </div>
+		<div data-role="header" data-position="fixed">
+			<h1>Money</h1>
+			<a href="#left-panel" data-icon="bars" data-role="button" data-iconpos="notext" data-iconshadow="false">Menu</a>
+		</div>
+		
+
+		<!--Logout-button-->
+        <!--<div data-role="header" data-position="fixed">
+            <a href="logout">Log out</a>
+            <h1>IFinance</h1>
+        </div>-->
+        <!-- /header -->
+		
+		
+        
+        <div role="main" class="ui-content">
+            <ul data-role="listview" data-filter="true">
+                <li><a href="#monday" data-transition = "slide">Monday</a></li>
+                <li><a href="#tuesday" data-transition = "slide">Tuesday</a></li>
+                <li><a href="#wednesday" data-transition = "slide">Wednesday</a></li>
+                <li><a href="#thursday" data-transition = "slide">Thursday</a></li>
+                <li><a href="#friday" data-transition = "slide">Friday</a></li>
+            </ul>
+
+        </div>
+        
+        <fieldset class="ui-grid-b">
+        
+            <div class="ui-block-a ui-shadow">Food</div>
+            <div class="ui-block-b ui-shadow">Social</div>
+            <div class="ui-block-c ui-shadow">Rent</div>
+			
+            <div class="ui-block-c"><a class="ui-btn ui-icon-customMat hvr-shrink ui-corner-all ui-shadow ui-btn-icon-notext ui-nodisc-icon">Rent</a></div>
+            <div class="ui-block-c"><a class="ui-btn ui-icon-customSparing hvr-shrink ui-corner-all ui-shadow ui-btn-icon-notext ui-nodisc-icon">Rent</a></div>
+            <div class="ui-block-c"><a class="ui-btn ui-icon-customFriends hvr-shrink ui-corner-all ui-shadow ui-btn-icon-notext ui-nodisc-icon">Rent</a></div>
+			
+		<!--Doughnut chart-->
+        <canvas id="myDChart" width="256" height="256"></canvas>
+		<script src="js/scriptDoughnut.js"></script>
+           
+        
+        </fieldset>
+        <!-- /content -->
+
+        <div data-role="footer" data-position="fixed">
+            <h4>&copy; 2016</h4>
+        </div>
+        <!-- /footer -->
+    </div>
+    <!-- /page -->
+    
+    
+    <div data-role="page" id="monday">
+
+        <div data-role="header">
+            <h1>Monday</h1>
+            <a href="#home" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all" data-transition="slide" data-direction="reverse">No text</a>
+
+        </div>
+        <!-- /header -->
+        
+        
+            
+            <div role="main" class="ui-content" >   
+                
+            <div data-role="fieldcontainer">         
+                <label for="company">Company Name:</label>
+                <input type="text" id="company" name="company">
+            </div>
+            
+            <div data-role="fieldcontainer">         
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required placeholder="Enter your password">
+            </div>  
+                
+            <!--TextArea-->    
+            <div data-role="fieldcontainer">         
+                <label for="comments">Comments:</label>
+                <textarea id="comments" name="comments" data-theme="b"></textarea>
+            </div>  
+                
+                
+            </div>
+          
+        
+        <!-- /content -->
+        
+    </div>
+    <!-- /page -->
+    
+    
+    <div data-role="page" id="tuesday">
+
+        <div data-role="header">
+            <h1>Tuesday</h1>
+            <a href="#home" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all" data-transition="slide" data-direction="reverse">No text</a>
+
+        </div>
+        <!-- /header -->
+
+        <div role="main" class="ui-content">
+            <ol data-role="listview">
+                <li>Mat</li>
+                <li>Sosialt</li>
+                <li>Underholdning</li>
+                <li>Leie</li>  
+                <li>Annet</li>
+            </ol>
+        </div>
+        
+        <!--Slider-->
+        <div data-role="fieldcontainer">
+            <label for="qty">Quantity:</label>
+            <input type="range" id="qty" name="qty" min="1" max="100" value="5" data-theme="a"/> <!--Theme funker ikke per API-def?->
+        </div>
+
+        <!--Flip-Switch-->
+        <label for="flip">Flip Switch</label>
+            <select name="flip" id="flip" data-role="slider">
+                <option value="off">Dull</option>
+                <option value="on">Cool</option>
+            </select>
+        </div>
+        <!-- /content -->
+        
+       
+    </div>
+    <!-- /page -->
+    
+    
+    <div data-role="page" id="wednesday">
+
+        <div data-role="header">
+            <h1>Wednesday</h1>
+            <a href="#home" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all" data-transition="slide" data-direction="reverse">No text</a>
+
+        </div>
+        <!-- /header -->
+
+        <div role="main" class="ui-content">
+            <ol data-role="listview">
+                <li>Mat</li>
+                <li>Sosialt</li>
+                <li>Underholdning</li>
+                <li>Leie</li>  
+                <li>Annet</li>
+            </ol>
+        </div>
+        
+        <!--Select Menu-->
+        <label for="training">Training</label>
+            <select id="training" name="training" data-native-menu="false" data-inline="true">
+                <option value="0" data-placeholder="true">Select your training</option>
+                <option value="1">Java</option>
+                <option value="2">Jquery Mobile</option>
+                <option value="3">Unity 5</option>
+            </select>
+        
+        <!-- /content -->
+        
+    </div>
+    
+    
+    <div data-role="page" id="thursday">
+
+        <div data-role="header">
+            <h1>Thursday</h1>
+            <a href="#home" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all" data-transition="slide" data-direction="reverse">No text</a>
+
+        </div>
+        <!-- /header -->
+
+        <!--Check-Boxes-->
+        <div data-role="controlgroup" data-type="horizontal">
+            <label for="bold">B</label>
+                <input type="checkbox" id="bold" value="no">
+            <label for="italic">I</label>
+                <input type="checkbox" id="italic" value="no">
+            <label for="underline">U</label>
+                <input type="checkbox" id="underline" value="no">      
+        </div>
+		
+		<div data-role="fieldcontainer"> 		
+                <label for="company">Total cost:</label>
+				<div id="totalField">
+                <input type="text" id="total" name="total">
+				</div>
+			
+				<div class="center-wrapper">
+				<button class="ui-btn ui-btn-inline center-button" id="total" name="total" onClick="subForm()">Button</button>
+				</div>
+        </div>
+		
+		<!--Line chart-->
+		<canvas id="myChart" width="300" height="300"></canvas>
+		<script src="js/scriptLine.js"></script>      
+        <!-- /content -->
+        
+    </div>
+    
+    
+    <div data-role="page" id="friday">
+        
+        <script>
+            $(document).on("pagecreate", "#home", function() {
+                $("p").on("tap", function(){
+                    $(this).hide();
+                });
+            });
+        </script>
+
+        <div data-role="header">
+            <h1>Friday</h1>
+            <a href="#home" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all" data-transition="slide" data-direction="reverse">No text</a>
+            <p>Click to hide me!</p>
+
+        </div>
+        <!-- /header -->
+        
+       
+
+        <div role="main" class="ui-content">
+            <ol data-role="listview">
+                <li>Mat</li>
+                <li>Sosialt</li>
+                <li>Underholdning</li>
+                <li>Leie</li>  
+                <li>Annet</li>
+            </ol>
+        </div>
+        <!-- /content -->
+        
+        
+        
+        
+    </div>
+    <!-- /page -->
+
+</body>
+
+</html>
