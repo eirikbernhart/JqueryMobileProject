@@ -62,51 +62,22 @@
 			 <a href="#home" id="homeBtn" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all" data-transition="slide" data-direction="reverse"  onClick="home()">No text</a>
 		</div>
 		
-		
+    <!-- ---------- WHISLIST START ------------ -->
+<div id="myDIV" class="header">
+    <h2>Min ønskeliste</h2>
+        <input type="text" id="myInput" placeholder="Title...">
+        <span onclick="newElement()" class="addBtn">Legg til</span>
+</div>
 
-		
+<ul id="myUL">
+  <li>MacBook Pro</li>
+  <li class="checked">DJI Osmo</li>
+  <li>Iphone 7</li>
+  <li>DJI Phantom 4</li>
+  <li>Dubai</li>
+  <li>Seng</li>
+</ul>
 
-		
-		<form>
-			<h1><center>Nytt ønske</center></h1>
-				<input type="text" name="textinput-f" id="textinput-f" placeholder="Eks: MacBook Pro 2016,-" value="">
-				<div data-role="controlgroup">
-						
-				</div>
-				<button class="ui-btn ui-corner-all">Legg til ønske</button>	
-
-		</form>
-		
-		<!--<form>
-		<fieldset data-role="collapsible">
-			<legend>Ny Utgift</legend>
-				<input type="text" name="textinput-f2" id="textinput-f" placeholder="Eks: Narvesen 40,-" value="">
-				<div data-role="controlgroup">
-						<label class="checkbox-inline" for="radio-2-a">Leie
-							<input type="radio" name="checkbox-1-a" id="radio-2-a">
-						</label>
-						
-						<label class="checkbox-inline" for="radio-2-b">Mat & drikke
-							<input type="radio" name="checkbox-1-a" id="radio-2-b">	
-						</label>
-					
-						<label class="checkbox-inline" for="radio-2-c">Sosialt
-							<input type="radio" name="checkbox-1-a" id="radio-2-c">	
-						</label>
-			</div>
-		</fieldset>
-		</form>-->
-		
-		
-		
-		
-		
-		
-		
-		
-		  
-		  
-		
 		<!-- footer -->
 		<div data-role="footer" data-position="fixed">	
 			
@@ -116,7 +87,7 @@
 	
 
 	<!--Custom js-->
-	<script src="js/oversiktLogic.js"></script>
+	<script src="js/nyforingLogic.js"></script>
 	
 	
 </body>
