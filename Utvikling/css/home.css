@@ -12,7 +12,6 @@
 .menu {
     display: inline-block;
     cursor: pointer;
-    width: 35px;
     margin-left: 5px;
     margin-top: 10px;
 }
@@ -20,7 +19,7 @@
 .logo {
     display: inline-block;
     width: 30px;
-    margin-left: 140px;
+    margin-left: 170px;
 }
 /* ----------------------- CONTENT START ----------------------- */
 .bruksKonto {
@@ -72,6 +71,14 @@
     background-color: transparent !important;
     border-color: transparent !important;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+/* -------------------- SIDE BAR ------------------------ */
+.ui-listview{
+    background-color: black;
+}
+.ui-panel-display-overlay {
+    width: 7.5em;
+    color: #147E9D;
 }
 
 /*iPhone < 5:*/
