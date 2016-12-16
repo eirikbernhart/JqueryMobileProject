@@ -74,6 +74,15 @@
     background-repeat: no-repeat;
 }
 
+#homeGrid {
+	
+}
+
+.ui-grid-b {
+	/*background-color: red !important;*/
+	width: auto;
+}
+
 /*iPhone < 5:*/
 @media screen and (device-aspect-ratio: 2/3) {}
 
