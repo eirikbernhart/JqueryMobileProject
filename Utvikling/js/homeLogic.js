@@ -7,10 +7,10 @@ function oversikt() {
 }
 function sparing() {
     window.location.href = "sparing.html";
-
 }
-
 function vissparing() {
     window.location.href = "vissparing.html";
-
+}
+function nyforing() {
+    window.location.href = "nyforing.html";
 }

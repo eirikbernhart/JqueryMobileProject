@@ -20,18 +20,10 @@
 .logo {
     display: inline-block;
     width: 30px;
-    margin-left: 140px;
+    margin-left: 130px;
 }
 
 /* ------------------------------ CONTENT START ------------------------------ */
-.box {
-    float: left;
-    background-color: #F47B20;
-    border: 1px solid white;
-    padding: 72px 100px;
-    display: inline-block;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
 .bruksKonto {
     background-image: url(../images/wallet.png);
     background-position: center;
@@ -72,14 +64,15 @@
     background-position: center;
     background-repeat: no-repeat;
 }
-
-#homeGrid {
-	
+.ui-block-a, .ui-block-b {
+	width: 100%;
+    border: 2px solid white;
 }
-
-.ui-grid-b {
-	/*background-color: red !important;*/
-	width: 600px;
+.ui-btn {
+    padding: 60px;
+    background-color: transparent !important;
+    border-color: transparent !important;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
 /*iPhone < 5:*/
